@@ -147,16 +147,34 @@ Views Created:
     - Product, Customer, Store, and Date attributes
 
     - Profit calculation: profit = total_unitprice - total_unitcost
+ 
+      <img width="1041" height="356" alt="image" src="https://github.com/user-attachments/assets/b73e0d21-9a44-4457-ae84-67cd07d586d8" />
+
 
 - **stores** – Cleaned store information with proper historical tracking of status (open/closed/restructured).
 
+     <img width="1025" height="353" alt="image" src="https://github.com/user-attachments/assets/83ce211a-5c20-4ff9-844a-0f21dc0f19ac" />
+
+
 - **products** – Includes product hierarchy (Category > Subcategory) and pricing structure.
+
+     <img width="1325" height="346" alt="image" src="https://github.com/user-attachments/assets/f95dae4f-ac43-47b9-8362-a902e3b2b79c" />
+
 
 - **customers** – Contains customer demographics for segmentation and cohort analysis.
 
+     <img width="1273" height="351" alt="image" src="https://github.com/user-attachments/assets/84b9fd4b-16fc-4f55-ab29-ed9f9316e383" />
+
+
 - **dates** – Centralized time dimension for all time-based reporting.
 
+     <img width="1478" height="347" alt="image" src="https://github.com/user-attachments/assets/48d4f398-8d6b-4630-a090-f3a1f273700e" />
+
+
 - **CurrencyExchange** – Supports currency conversion for globalized reporting and comparisons.
+
+     <img width="378" height="350" alt="image" src="https://github.com/user-attachments/assets/202e0fe1-3cd5-42ac-b85f-427f493dd094" />
+
 
 
 ##
@@ -164,50 +182,47 @@ Views Created:
 ## Analysis
 This data model supports a wide range of business intelligence and analytics use cases:
 
-1. Sales Performance
+**1. Sales Performance**
 
-Revenue and profit tracking over time
+   - Revenue and profit tracking over time
 
-Units sold by product/category
+   - Units sold by product/category
 
-Store-wise performance analysis
+   - Store-wise performance analysis
 
-2. Customer Insights
+**2. Customer Insights**
 
-Purchase behavior by age, gender, country
+   - Purchase behavior by age, gender, country
 
-Cohort analysis using birthday or signup dates
+   - Region-wise segmentation.
 
-Region-wise segmentation and trend tracking
+**3. Product Analysis**
 
-3. Product Profitability
+   - Margin analysis across categories and sub-categories.
+   
+   - Identifying top-selling and low-performing products
+   
+   - Product sales variation according to region.
 
-Margin analysis across categories and SKUs
+**4. Store Operations**
 
-Identifying top-selling and low-performing products
+   - Store sales performnce according to city,country.
+   
+   - Performance comparison: Retail vs Online
+   
+   - Store type vs revenue/profitability
 
-Seasonality impact on product sales
+**5. Time-Series and Trend Analysis**
 
-4. Store Operations
+   - Monthly, quarterly, yearly sales comparisons
+   
+   - Sales by working day vs weekends
+   
+   - Identifying high/low performing time periods
 
-Store lifecycle and status trends
+##
 
-Performance comparison: open vs closed vs restructured
+##  Conclusion
+The Contoso 100K Sales Database, when modeled using the enriched salestable fact view and its supporting dimensions (customers, products, stores, dates, currency exchange), provides a powerful foundation for business intelligence and advanced analytics.
 
-Store area vs revenue/profitability
-
-5. Time-Series and Trend Analysis
-
-Monthly, quarterly, yearly sales comparisons
-
-Sales by working day vs weekends
-
-Identifying high/low performing time periods
-
-6. Currency Adjusted Reporting
-
-Currency normalization using CurrencyExchange
-
-Reporting in preferred or local currencies
-
-Economic impact analysis on pricing and cost
+By integrating profitability measures, product hierarchies, customer demographics, store attributes, and temporal data, this model enables a 360° view of business performance across multiple dimensions.
